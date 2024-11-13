@@ -1,0 +1,488 @@
+/* ++++++++++++++++++++ GENERAL ++++++++++++++++++++++++++ */
+img {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+.space {
+    padding-block: 8rem;
+}
+
+.line {
+    width: 3%;
+    border-bottom: #0078FF solid .3125rem;
+}
+
+.line-section {
+    width: 12%;
+    border-bottom: #0078FF solid .125rem;
+}
+
+/* ++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++ */
+.nav-link::before {
+    content: '';
+    background-color: #fff;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    width: 0;
+}
+
+.navbar-nav .nav-link.active:before {
+    width: 70%;
+    transition: width 1s;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.navbar-toggler {
+    border: transparent;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ++++++++++++++++++++ home section ++++++++++++++++++++++++++ */
+#home {
+    min-height: 100vh;
+    background: url(images/hero-bg-410.jpg) center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .up a {
+        color: #FFFFFF;
+        background-color: #0078FF;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 1%;
+        bottom: 2%;
+        text-decoration: none;
+        z-index: 11;
+    }
+
+    .caption {
+        text-align: center;
+        flex-direction: column;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        font-size: 2.5rem;
+        font-weight: 600;
+        position: relative;
+
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 600;
+        }
+    }
+
+    .caption::after {
+        content: '';
+        animation: typing 10s infinite alternate;
+    }
+}
+
+@keyframes typing {
+    0% {
+        content: 'D|';
+    }
+
+    2% {
+        content: 'De|';
+    }
+
+    4% {
+        content: 'Des|';
+    }
+
+    6% {
+        content: 'Desi|';
+    }
+
+    8% {
+        content: 'Desig|';
+    }
+
+    10% {
+        content: 'Design|';
+    }
+
+    12% {
+        content: 'Designe|';
+    }
+
+    14% {
+        content: 'Designer|';
+    }
+
+    16% {
+        content: 'Designe|';
+    }
+
+    18% {
+        content: 'Design|';
+    }
+
+    20% {
+        content: 'Desig|';
+    }
+
+    22% {
+        content: 'Desi|';
+    }
+
+    24% {
+        content: 'Des|';
+    }
+
+    26% {
+        content: 'De|';
+    }
+
+    28% {
+        content: 'Dev|';
+    }
+
+    30% {
+        content: 'Deve|';
+    }
+
+    32% {
+        content: 'Devel|';
+    }
+
+    34% {
+        content: 'Develo|';
+    }
+
+    36% {
+        content: 'Develop|';
+    }
+
+    38% {
+        content: 'Develope|';
+    }
+
+    40% {
+        content: 'Developer|';
+    }
+
+    42% {
+        content: 'Develope|';
+    }
+
+    44% {
+        content: 'Develop|';
+    }
+
+    46% {
+        content: 'Develo|';
+    }
+
+    48% {
+        content: 'Devel|';
+    }
+
+    50% {
+        content: 'Deve|';
+    }
+
+    52% {
+        content: 'Dev|';
+    }
+
+    54% {
+        content: 'De|';
+    }
+
+    56% {
+        content: 'D|';
+    }
+
+    58% {
+        content: '|';
+    }
+
+    60% {
+        content: 'F|';
+    }
+
+    62% {
+        content: 'Fr|';
+    }
+
+    64% {
+        content: 'Fre|';
+    }
+
+    68% {
+        content: 'Free|';
+    }
+
+    70% {
+        content: 'Freel|';
+    }
+
+    72% {
+        content: 'Freela|';
+    }
+
+    74% {
+        content: 'Freenlan|';
+    }
+
+    76% {
+        content: 'Freelanc|';
+    }
+
+    78% {
+        content: 'Freelance|';
+    }
+
+    79% {
+        content: 'Freelancer|';
+    }
+
+    80% {
+        content: 'Freelance|';
+    }
+
+    81% {
+        content: 'Freelanc|';
+    }
+
+    82% {
+        content: 'Freelan|';
+    }
+
+    83% {
+        content: 'Freela|';
+    }
+
+    84% {
+        content: 'Freel|';
+    }
+
+    85% {
+        content: 'Free|';
+    }
+
+    86% {
+        content: 'Fre|';
+    }
+
+    87% {
+        content: 'Fr|';
+    }
+
+    88% {
+        content: 'F|';
+    }
+
+    89% {
+        content: '|';
+    }
+
+    90% {
+        content: 'P|';
+    }
+
+    91% {
+        content: 'Ph|';
+    }
+
+    91% {
+        content: 'Pho|';
+    }
+
+    92% {
+        content: 'Phot|';
+    }
+
+    93% {
+        content: 'Photo|';
+    }
+
+    94% {
+        content: 'Photog|';
+    }
+
+    95% {
+        content: 'Photogr|';
+    }
+
+    96% {
+        content: 'Photogra|';
+    }
+
+    97% {
+        content: 'Photograh|';
+    }
+
+    98% {
+        content: 'Photograhe|';
+    }
+
+    100% {
+        content: 'Photograher|';
+    }
+}
+
+/* ++++++++++++++++++++ resuim section ++++++++++++++++++++++++++ */
+#resuim{
+    h4 {
+        position: relative;
+    
+        &::before {
+            content: "";
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            left: -24px;
+            border: #0078FF solid 1px;
+        }
+    }
+}
+
+/* ++++++++++++++++++++ services section ++++++++++++++++++++++++++ */
+#services i {
+    border-radius: 50%;
+    background-color: #0078FF;
+    color: #FFFFFF;
+}
+
+.item {
+    position: relative;
+
+    &:hover {
+        bottom: 5px;
+    }
+
+    &:hover h3 {
+        color: #0078FF;
+    }
+}
+
+.layer {
+    border-radius: 17px;
+    background-color: #0078FF;
+    position: relative;
+}
+
+.details {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.7), rgba(0, 0, 255, 0.7)), url(images/counters-bg-172.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+
+    i {
+        border: solid #FFFFFF .3125rem;
+        border-radius: 50%;
+    }
+}
+
+/* ++++++++++++++++++++ portfolio section ++++++++++++++++++++++++++ */
+#portfolio {
+    .images {
+        position: relative;
+
+        .image-text {
+            position: absolute;
+            top: 100%;
+            opacity: 0;
+            left: 10px;
+            right: 10px;
+            transition: all .5s;
+        }
+
+        &:hover .image-text {
+            top: 70%;
+            opacity: 1;
+        }
+    }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #0078FF;
+    background-color: transparent;
+}
+
+.nav-link {
+    color: black;
+}
+
+/* ++++++++++++++++++++ pricing section ++++++++++++++++++++++++++ */
+.dash {
+    border-bottom: dashed 1px;
+}
+
+/* ++++++++++++++++++++ carsul ++++++++++++++++++++++++++ */
+#carouselExampleIndicators {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.7), rgba(0, 0, 255, 0.7)),
+        url(images/testimonials-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-inner img {
+    width: 80px;
+    border: solid #0078FF 3px;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+/* ++++++++++++++++++++ contact ++++++++++++++++++++++++++ */
+.info .icon {
+    color: #0078FF;
+    border-radius: 50%;
+    border: solid 1px #0078FF;
+    width: 50px;
+    height: 50px;
+    transition: all 1s;
+}
+
+.info .icon:hover {
+    color: #FFFFFF;
+    background-color: #0078FF;
+}
+
+/* ++++++++++++++++++++ footer ++++++++++++++++++++++++++ */
+.face,
+.insta,
+.twi,
+.lin {
+    border: solid #0078FF;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.face:hover,
+.insta:hover,
+.twi:hover,
+.lin:hover {
+    border: solid #76aeee;
+    background-color: #0078FF;
+    color: #FFFFFF;
+}
